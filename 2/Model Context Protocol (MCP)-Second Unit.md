@@ -291,9 +291,12 @@ mcpServers:
     args:
       - "@playwright/mcp@latest"
 ```
-MCP kısmında Browser search aşağıdaki gibi çıkıyor:
-![3 numaralı görsel](3.png)
-Aşağıdaki prompt girildiğinde
+MCP kısmında Browser search aşağıdaki gibi çıkıyor:  
+
+![3 numaralı görsel](3.png)  
+
+Aşağıdaki prompt girildiğinde  
+
 ```txt
 1. Using playwright, navigate to https://news.ycombinator.com.
 
@@ -304,11 +307,14 @@ Aşağıdaki prompt girildiğinde
 4. Save this list as plain text in the hn.txt file, with each line containing the title and URL separated by a hyphen.
 
 Do not output code or instructions—just complete the task and confirm when it is done.
-```
+```  
 aşağıdaki hata çıktı. Sadece 1 denememde hn.txt oluşturulabildi ama dosya içine bilgiler yazılamadı Sorunun ne olduğunu anlamadım. Sonrasında MCP Inspector ile denedim aşağıdaki hata devam etti.
-![4 numaralı görsel](4.png)
-Normalde alınması gereken çıktı aşağıdaki gibiymiş:
-![5 numaralı görsel](5.png)
+![4 numaralı görsel](4.png)  
+
+Normalde alınması gereken çıktı aşağıdaki gibiymiş:  
+
+![5 numaralı görsel](5.png)  
+
 # [Gradio as an MCP Client](https://huggingface.co/learn/mcp-course/unit2/gradio-client#gradio-as-an-mcp-client)
 Önceki bölümde oluşturulan MCP server'a yeni özellikler eklenecek.
 ## [MCP Client in Gradio](https://huggingface.co/learn/mcp-course/unit2/gradio-client#mcp-client-in-gradio)
