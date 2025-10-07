@@ -11,10 +11,10 @@ M farklı yapay zeka uygulamasının N farklı harici kaynağa bağlanması zor 
 ### [Without MCP (M×N Problem)](https://huggingface.co/learn/mcp-course/unit1/key-concepts#without-mcp-mn-problem)
 MCP olmadığı durumda geliştiricilerin M×N adet özel entegrasyon oluşturması gerekir.
 ![1 numaralı görsel](1.png)  
-MCP bu iş yükünü (sistemin kurulması/sistemin bakımı ve büyümesi) ortadan kaldırır. Birden fazla bu tarz araç bir noktadan sonra yönetilemez hale gelir. Örneğin 3 AI uygulaması var (ChatGPT, Claude, Gemini) ve 4 araç var (Veritabanı, API, Dosya sistemi, Hesap makinesi). Her AI'ın her araçla konuşabilmesi için 4×3 kere özel kod yazılması gerekir. Toplamda 12 entegrasyon gereklidir. Aşağıdaki gibi:
+MCP bu iş yükünü (sistemin kurulması/sistemin bakımı ve büyümesi) ortadan kaldırır. Birden fazla bu tarz araç bir noktadan sonra yönetilemez hale gelir. Örneğin 3 AI uygulaması var (ChatGPT, Claude, Gemini) ve 3 araç var (Veritabanı, Dosya sistemi, Hesap makinesi). Her AI'ın her araçla konuşabilmesi için 3×3 kere özel kod yazılması gerekir. Toplamda 9 entegrasyon gereklidir. Aşağıdaki gibi:
 ![2 numaralı görsel](2.png)  
 ### [With MCP (M+N Solution)](https://huggingface.co/learn/mcp-course/unit1/key-concepts#with-mcp-mn-solution)
-MCP ile bu zorluk M+N problemine dönüşür. Her AI uygulaması sadece MCP protokolünü anlamayı öğrenir (3 entegrasyon). Her araç sadece MCP protokolünü konuşmayı öğrenir (4 entegrasyon). Toplam 7 entegrasyon yeterlidir. Eğer yeni bir AI modeli entegre etmek gerekse, MCP olmadan modeli tüm araçlara entegre etmek gerekirdi. MCP ile sadece modelin MCP'yi anlaması yeterlidir. Otomatik olarak tüm MCP uyumlu araçlara erişim sağlanır. MCP bu noktada ortak dil görevi görür.
+MCP ile bu zorluk M+N problemine dönüşür. Her AI uygulaması sadece MCP protokolünü anlamayı öğrenir (3 entegrasyon). Her araç sadece MCP protokolünü konuşmayı öğrenir (3 entegrasyon). Toplam 6 entegrasyon yeterlidir. Eğer yeni bir AI modeli entegre etmek gerekse, MCP olmadan modeli tüm araçlara entegre etmek gerekirdi. MCP ile sadece modelin MCP'yi anlaması yeterlidir. Otomatik olarak tüm MCP uyumlu araçlara erişim sağlanır. MCP bu noktada ortak dil görevi görür.
 ## [Core MCP Terminology](https://huggingface.co/learn/mcp-course/unit1/key-concepts#core-mcp-terminology)
 MCP bir standartlaştırma getirdiği için bu sistemin kurulumunun belirlenmiş bir standart doğrultusunda olması gerekir.
 ### [Components](https://huggingface.co/learn/mcp-course/unit1/key-concepts#components)
